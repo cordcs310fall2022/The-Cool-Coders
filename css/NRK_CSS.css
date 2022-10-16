@@ -1,0 +1,9 @@
+/* This first section makes the whole document have no white edges in the corner and gives the whole page structure */
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+
+ background-color #ffe0b3
