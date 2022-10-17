@@ -13,3 +13,7 @@ body {font-family: Courier; color: #808080 }
   .main {
 background: #ffe0b3; 
   }
+
+  .checked {
+    color: red;
+  }
