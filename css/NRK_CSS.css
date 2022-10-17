@@ -6,4 +6,10 @@ padding: 0;
 box-sizing: border-box;
  }
 
- background-color #ffe0b3
+/* This section has the color and font of the whole form */
+body {font-family: Courier; color: #808080 }
+ 
+/* This section customizes the bigger div section (header + Contactform) */
+  .main {
+background: #ffe0b3; 
+  }
