@@ -7,12 +7,49 @@ box-sizing: border-box;
  }
 
 /* This section has the color and font of the whole form */
-body {font-family: Courier; color: #808080 }
+body {font-family: Courier; 
+      color: #808080;
+      background-color: #FCEBD1;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      position: relative;
+      padding: 50px 100px;
+      min-height: 100vh;
+      flex-direction: column; }
+
+  /* This section customizes all the html components with type submit (The upload button and Submit Button)*/
+  .button {
+    background-color: #FCEBD1;
+    font-weight: bold; 
+    border-color: red;
+    color: red;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer; 
+    margin-left: 10px;
+    margin-right: 10px;}
+  
+  /* This makes the buttons solid and a difffernt color upon the hover of a mouse */
+  .button:hover {
+    background-color: red;
+    color: white; }
+
+  .NRK_logo {
+   position: absolute;
+   align-items: center; }
+
+   
+
+
+
+
+
+
+
+
  
-/* This section customizes the bigger div section (header + Contactform) */
-  .main {
-background: #786241; 
-  }
+
 
   .checked {
     color: red;
