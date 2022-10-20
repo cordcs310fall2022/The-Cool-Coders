@@ -1,0 +1,44 @@
+<html>
+    <link rel="styleSheet" href="../css/NRK_CSS.css"> <!--- Provides a link to the Style Sheet --->  
+    <title>  NewRoz Kebab Resturant Contact Page</title>       <!--- The title of the website --->
+    
+<div name = "main">
+
+    <div name = "header">
+    <!--- Header Buttons --->
+    <div class = "left_side">
+        <button type="button" name = "Home_Button" class = "button" onclick=" "> <a href="../index.html" " style="color: black; text-decoration:none"> HOME </a> </button>
+        <button type="button" name = "Our_Story_Button" class = "button" onclick=" "> <a href="Our_Story.html" " style="color: black; text-decoration:none"> OUR STORY </a> </button>
+        <button type="button" name = "Menu_Button" class = "button" onclick=" "> <a href="Menu.html" " style="color: black; text-decoration:none"> MENU </a> </button>
+        <button type="button" name = "Order_Now_Button" class = "button" onclick=" "> <a href="Order_Now.html" " style="color: black; text-decoration:none"> ORDER_NOW</a> </button>
+        <button type="button" name = "Reservation_Button" class = "button" onclick=" "> <a href="Reservation.html" " style="color: black; text-decoration:none"> RESERVATIONS </a> </button>
+        <button type="button" name = "Contact_Us_Button" class = "button" onclick=" "> <a href="Contact_Us.html" " style="color: black; text-decoration:none"> CONTACT US </a> </button>
+    <!--- The logo of the Restaurnat --->
+    <img name = "NRK_logo" src="../images/Header_logo.png" alt="NewRoz Kebab Logo Image" width=" " height=" ">
+    </div>
+
+
+    <!--- Flatpickr --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+    <div class="cintact">
+    <form id="contact" method="post" action=""><br><br>
+    <label> Name:</label><br>
+    <input type="text" placeholder="Enter Your Name"
+    name="name" id="name"><br><br>
+    <label> Email:</label><br>
+    <input type="text" placeholder="Enter Your Email Address"
+    email="email" id="email"><br><br>
+    <label> Phone Number:</label><br>
+    <input type="phone" placeholder="Enter Your Phone Number"
+    email="phone" id="phone"><br><br>
+    <label> Are you a previous customer?:</label><br>
+    <input type="radio" name = "y" value="Yes"> Yes </br>
+    <input type="radio" name = "n" value="No"> No </br></br>
+    <label> Enter message:</label><br>
+    <textarea id="editing"
+    oninput="update(this.value);"></textarea>
+    <pre id="highlighting" aria-hidden="true">
+    </head>
+</html>
