@@ -3,20 +3,13 @@
 {
 margin: 0;
 padding: 0;
-box-sizing: border-box;
+box-sizing: border-box; 
  }
 
 /* This section has the color and font of the whole form */
 body {font-family: Courier; 
       color: #808080;
-      background-color: #FCEBD1;
-      background-size: cover;
-      justify-content: center;
-      display: flex;
-      position: relative;
-      padding: 50px 100px;
-      min-height: 100vh;
-      flex-direction: column; }
+      background-color: #FCEBD1}
 
   /* This section customizes all the html components with type submit (The upload button and Submit Button)*/
   .button {
@@ -27,30 +20,29 @@ body {font-family: Courier;
     padding: 8px 15px;
     border-radius: 3px;
     cursor: pointer; 
-    margin-left: 10px;
-    margin-right: 10px;}
+    margin-left: 2%;
+    margin-right: 2%; }
   
   /* This makes the buttons solid and a difffernt color upon the hover of a mouse */
   .button:hover {
     background-color: red;
     color: white; }
 
-  .NRK_logo {
-   position: absolute;
-   align-items: center; }
-
-   
-
-
-
-
-
-
-
-
- 
-
-
   .checked {
-    color: red;
-  }
+    color: red; }
+
+  .left_side {
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 2%; }
+  .NRK_logo {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 2%; }
+  .right_side {
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 2%; }
+
+
+
