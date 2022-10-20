@@ -1,0 +1,106 @@
+<html>
+    <head>
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="styleSheet" href="../css/NRK_CSS.css"> <!--- Provides a link to the Style Sheet --->  
+        <title>  NewRoz Kebab Resturant </title>       <!--- The title of the website --->
+        
+    <div name = "main">
+
+        <div name = "header">
+        <!--- Header Buttons --->
+        <div class = "left_side">
+            <button type="button" name = "Home_Button" class = "button" onclick=" " > HOME </button>
+            <button type="button" name = "Our_Story_Button" class = "button" onclick=" "> OUR STORY </button>
+            <button type="button" name = "Menu_Button" class = "button" onclick=" "> MENU </button>
+            </div>
+            <div class = "right_side">
+            <button type="button" name = "Reservation_Button" class = "button" onclick=" "> RESERVATIONS </button>
+            <button type="button" name = "Order_Now_Button" class = "button" onclick=" "> ORDER NOW </button>
+            <button type="button" name = "Contact_Us_Button" class = "button" onclick=" "> CONTACT US </button>
+            </div>
+        <!--- The logo of the Restaurnat --->
+        <img name = "NRK_logo" src="../images/Header_logo.png" alt="NewRoz Kebab Logo Image" width=" " height=" ">
+        </div>
+
+
+        <!--- Flatpickr --->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    </head>
+
+    <body>
+
+        <div name = "reservation_pic1">
+                <img name = "Sarbest_image" class = "Sarbest_image" src="../images/reservation_pic1.jpg" alt="Sarbest Kurdistan Kebab Image" width=" " height=" ">
+            </div>
+    
+    
+            <div name = "Open_Hours">
+                <p>Open Hours </p>
+                <p>Monday - Saturday </p>
+                <p> 11AM–9PM </p>
+                <p>Sunday</p>
+                <p>Closed</p>
+            </div>
+
+
+  <div class="mx-auto col-5" style="margin-top: 10rem;">
+    <h1 class="text center mb-3 text-secondary">Datetime Picker</h1>             
+
+<form>
+    <input class="form-control" type="date" placeholder="Select DataTime">
+    </form>
+</div>
+
+    <div label for="appt">Choose Time for Reservation</label>
+
+<input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+
+<small>We are open between 9am to 9pm</small>
+</div>
+
+
+<div name = "Number_of_People_Coming">
+    <p>Number of People Coming</p>
+    <label for="Status" id="People_Coming" name="People_Coming" class="People_Coming"><font color="white">People Coming: </font></label>   
+    <select name="Status" id="Current_Status" class="choose_status">
+    <option value="Student">1</option>
+    <option value="Student">2</option>
+    <option value="Student">3</option>
+    <option value="Student">4</option>
+    <option value="Student">5</option>
+    <option value="Student">6</option>
+    <option value="Student">7</option>
+    <option value="Student">8 or more Call us</option>
+</select>
+    </div>
+
+
+    <div button type="button" name = "Contact_Us_Button" onclick=" "> FIND A TABLE </button> </div>
+
+    <div name = "Address">
+        <p>2501 8th St S, 
+            Moorhead, MN 56560
+            218 – 218 - 2182
+             </p>
+    </div>
+
+    <div name = "Find_US">
+        <p>Find Us</p>
+        <img name = "Find Us" class = "Find Us" src="../images/Find Us.png" alt="Find Us Image" width=" " height=" ">
+        </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+    flatpickr("#input[type=datetime-local]", {});
+    </script>
+
+   </body>
+
+</html>
