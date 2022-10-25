@@ -17,3 +17,10 @@ background: #786241;
   .checked {
     color: red;
   }
+.hbutton{
+ border-color: red;
+ background-color: white;
+ color: red;
+ cursor: pointer;
+ border-radius: 2px;
+}  
