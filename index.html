@@ -6,18 +6,38 @@
 
         <link rel="styleSheet" href="css/NRK_CSS.css"> <!--- Provides a link to the Style Sheet --->  
         <title>  NewRoz Kebab Resturant </title>       <!--- The title of the website --->
+
+        <!--- SliceBox Header -->
+        <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
+        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+		<meta name="author" content="Pedro Botelho for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="slicebox/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="slicebox/css/slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="slicebox/css/custom.css" />
+		<script type="text/javascript" src="slicebox/js/modernizr.custom.46884.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="slicebox/js/jquery.slicebox.min.js"></script>
+		<script type="text/javascript" src="slicebox/js/navigation.js"> </script>
+     
+
+
+        
         
     <div name = "main">
 
         <div name = "header">
         <!--- Header Buttons --->
              
-            <button type="button" name = "Home_Button" class = "button" onclick=" "> <a href="pages/index.html" " style="color: black; text-decoration:none"> HOME </a> </button>
-            <button type="button" name = "Our_Story_Button" class = "button" onclick=" "> <a href="pages/Our_Story.html" " style="color: black; text-decoration:none"> OUR STORY </a> </button>
+            <button type="button" name = "Home_Button" class = "button" onclick=" "> <a href="../The-Cool-Coders/index.html" style="color: black; text-decoration:none"> HOME </a> </button>
+            <button type="button" name = "Our_Story_Button" class = "button" onclick=" "> <a href="pages/Our_Story.html" style="color: black; text-decoration:none"> OUR STORY </a> </button>
             <button type="button" name = "Menu_Button" class = "button" onclick=" "> <a href="pages/Menu.html" " style="color: black; text-decoration:none"> MENU </a> </button>
-            <button type="button" name = "Order_Now_Button" class = "button" onclick=" "> <a href="pages/Order_Now.html" " style="color: black; text-decoration:none"> ORDER_NOW</a> </button>
-            <button type="button" name = "Reservation_Button" class = "button" onclick=" "> <a href="pages/Reservation.html" " style="color: black; text-decoration:none"> RESERVATIONS </a> </button>
-            <button type="button" name = "Contact_Us_Button" class = "button" onclick=" "> <a href="pages/Contact_Us.html" " style="color: black; text-decoration:none"> CONTACT US </a> </button>
+            <button type="button" name = "Order_Now_Button" class = "button" onclick=" "> <a href="pages/Order_Now.html" style="color: black; text-decoration:none"> ORDER_NOW</a> </button>
+            <button type="button" name = "Reservation_Button" class = "button" onclick=" "> <a href="pages/Reservation.html" style="color: black; text-decoration:none"> RESERVATIONS </a> </button>
+            <button type="button" name = "Contact_Us_Button" class = "button" onclick=" "> <a href="pages/Contact_Us.html" style="color: black; text-decoration:none"> CONTACT US </a> </button>
             <a href="pages/Admin_homepage.html"><img src="images/AdminIcon.png" alt="adminicon" style="width:42px;height:42px;"></a>
 
 
@@ -37,10 +57,57 @@
         <a href="https://www.Instagram.com/"><img name = "Instagram_logo" class = "Instagram_logo" src="images/Instagram_logo.png" alt="Instagram Logo Image" width=" " height=" "> </a> <br>
         </div>
 
-        <div name = "center_image">
-        <img name = "Kebab_image" class = "Kebab_image" src="images/Homepage_kabab.png" alt="Home_page Kebab Image" width=" " height=" ">
-        </div>
+        <!--- SliceBox  -->
+        <div class="wrapper">
 
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href="/index.html" target="_blank"><img src="images/Homepage_kabab.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Come and Have our Best Kebabs</h3>
+						</div>
+					</li>
+					<li>
+						<a href="pages/Our_Story.html" target="_blank"><img src="images/Inside NRK.jpg" alt="image2"/></a>
+						<div class="sb-description">
+							<h3> Our Story </h3>
+						</div>
+					</li>
+					<li>
+						<a href="pages/Menu.html" target="_blank"><img src="images/Desert.jpg" alt="image3"/></a>
+						<div class="sb-description">
+							<h3> Order Our Delicious Baklaba </h3>
+						</div>
+					</li>
+					<li>
+						<a href="pages/Order_Now.html" target="_blank"><img src="images/customer care.jpg" alt="image4"/></a>
+						<div class="sb-description">
+							<h3>Order Now</h3>
+						</div>
+					</li>
+					<li>
+						<a href="pages/Reservation.html" target="_blank"><img src="images/2 chairs.jpg" alt="image5"/></a>
+						<div class="sb-description">
+							<h3>Come and Dine with US</h3>
+						</div>
+					</li>
+					<li>
+						<a href="pages/Contact_Us.html" target="_blank"><img src="images/outside NRK.jpg" alt="image6"/></a>
+						<div class="sb-description">
+							<h3>Contact US</h3>
+						</div>
+					</li>
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+			</div>
+
+        <!--- Side Slogan -->
         <div name = "side_slogan">
         <p1> The Best Kebab's in Town </p1>
         </div>
