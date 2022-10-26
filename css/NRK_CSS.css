@@ -7,13 +7,45 @@ box-sizing: border-box;
  }
 
 /* This section has the color and font of the whole form */
-body {font-family: Courier; color: #808080 }
+body {font-family: Courier; color: #808080; background-color: #fcebd1; }
  
 /* This section customizes the bigger div section (header + Contactform) */
   .main {
+position: relative;
 background: #786241; 
   }
 
   .checked {
     color: red;
   }
+
+  .side_buttons {
+
+    position:absolute; 
+    left:2%;  
+    margin-top: 8%;
+  }
+
+   p1 {
+    transform: rotateZ(90deg); 
+    position:absolute; 
+    left:70%;  
+    top: 45%; 
+    color: red;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:50px;
+
+  }
+
+  .side_comments {
+    color: black;
+   
+    padding: 20px; 
+    width: 75%;
+    margin-left: 2%;
+  }
+
+ .written_comment{
+  margin-left: 12%;
+
+ }
