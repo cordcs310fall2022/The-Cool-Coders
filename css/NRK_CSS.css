@@ -18,3 +18,28 @@ background: #786241;
   .checked {
     color: red;
   }
+  .lbutton{
+    border-color: red;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    border-radius: 2px;
+    top: 15%;
+    left: 5%;
+    margin: 2%;
+   
+   } 
+   .NRK_logo{
+     right:50%;
+   }
+   .rbutton{
+     border-color: red;
+     background-color: white;
+     color: red;
+     cursor: pointer;
+     border-radius: 2px;
+     border-radius: 2px;
+     top: 15%;
+     left: 25%;
+     margin: 2%;
+    } 
