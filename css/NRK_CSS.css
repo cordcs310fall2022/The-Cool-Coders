@@ -20,7 +20,7 @@ background: #786241;
   }
   .lbutton{
     border-color: red;
-    background-color: white;
+    background-color: #fcebd1;
     color: red;
     cursor: pointer;
     border-radius: 2px;
@@ -34,7 +34,7 @@ background: #786241;
    }
    .rbutton{
      border-color: red;
-     background-color: white;
+     background-color: #fcebd1;
      color: red;
      cursor: pointer;
      border-radius: 2px;
