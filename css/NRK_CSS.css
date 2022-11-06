@@ -9,37 +9,50 @@ box-sizing: border-box;
 /* This section has the color and font of the whole form */
 body {font-family: Courier; color: #808080; background-color: #fcebd1; }
  
-/* This section customizes the bigger div section (header + Contactform) */
-  .main {
-position: relative;
-background: #786241; 
-  }
+
 
   .checked {
     color: red;
   }
-  .lbutton{
-    border-color: red;
-    background-color: white;
+
+
+   p1 {
+    transform: rotateZ(90deg); 
+    position:absolute; 
+    left:70%;  
+    top: 45%; 
     color: red;
-    cursor: pointer;
-    border-radius: 2px;
-    top: 15%;
-    left: 5%;
-    margin: 2%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:50px;
+
+  }
+
+  .side_comments {
+    color: black;
    
-   } 
-   .NRK_logo{
-     right:50%;
-   }
-   .rbutton{
-     border-color: red;
-     background-color: white;
-     color: red;
-     cursor: pointer;
-     border-radius: 2px;
-     border-radius: 2px;
-     top: 15%;
-     left: 25%;
-     margin: 2%;
-    } 
+    padding: 20px; 
+    width: 75%;
+    margin-left: 2%;
+  }
+
+ .written_comment{
+  margin-left: 11%;
+
+ }
+
+ input[type=button] {
+  width: 30%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  resize: vertical;  
+}
+
+.NRK_logo{
+display: flex;
+align-items: center;
+justify-content: center;
+}
