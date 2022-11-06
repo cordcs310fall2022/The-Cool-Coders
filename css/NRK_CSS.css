@@ -22,6 +22,8 @@ body {font-family: Courier; color: #808080; background-color: #fcebd1; }
   .checked {
     color: red;
   }
+
+
    p1 {
     transform: rotateZ(90deg); 
     position:absolute; 
@@ -30,16 +32,35 @@ body {font-family: Courier; color: #808080; background-color: #fcebd1; }
     color: red;
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size:50px;
+
   }
+
   .side_comments {
     color: black;
+   
     padding: 20px; 
     width: 75%;
     margin-left: 2%;
   }
+
  .written_comment{
   margin-left: 11%;
+
  }
 
+ input[type=button] {
+  width: 30%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  resize: vertical;  
+}
 
-
+.NRK_logo{
+display: flex;
+align-items: center;
+justify-content: center;
+}
