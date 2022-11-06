@@ -9,18 +9,14 @@ box-sizing: border-box;
 /* This section has the color and font of the whole form */
 body {font-family: Courier; color: #808080; background-color: #fcebd1; }
  
-/* This section customizes the bigger div section (header + Contactform) */
-  .main {
-position: relative;
-background: #786241; 
-  }
+
 
   .checked {
     color: red;
   }
   .lbutton{
     border-color: red;
-    background-color: #fcebd1;
+    background-color: white;
     color: red;
     cursor: pointer;
     border-radius: 2px;
@@ -34,7 +30,7 @@ background: #786241;
    }
    .rbutton{
      border-color: red;
-     background-color: #fcebd1;
+     background-color: white;
      color: red;
      cursor: pointer;
      border-radius: 2px;
