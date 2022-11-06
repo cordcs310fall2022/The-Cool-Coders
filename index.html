@@ -29,43 +29,44 @@
         
     <div class = "main">
 
-        <div name = "header">
-        <!--- Header Buttons --->
-        <div class="header_left">
-        <button type="button" name = "Home_Button" class = "lbutton" onclick=" "> <a href="index.html" " style="color: red; text-decoration:none"> HOME </a> </button>
-        <button type="button" name = "Our_Story_Button" class = "lbutton" onclick=" "> <a href="pages/Our_Story.html" " style="color: red; text-decoration:none"> OUR STORY </a> </button>
-        <button type="button" name = "Menu_Button" class = "lbutton" onclick=" "> <a href="pages/Menu.html" " style="color: red; text-decoration:none"> MENU </a> </button>
-        </div>
-        
-        <div class="header_center"> 
-        <img name = "NRK_logo" class = "NRK_logo"  src="images/Header_logo.png" alt="NewRoz Kebab Logo Image" width=" " height=" ">
-        </div>
-
-        <div class="header_right">
-        <button type="button" name = "Order_Now_Button" class = "rbutton" onclick=" "> <a href="pages/Order_Now.html" " style="color: red; text-decoration:none"> ORDER_NOW</a> </button>
-        <button type="button" name = "Reservation_Button" class = "rbutton" onclick=" "> <a href="pages/Reservation.html" " style="color: red; text-decoration:none"> RESERVATIONS </a> </button>
-        <button type="button" name = "Contact_Us_Button" class = "rbutton" onclick=" "> <a href="pages/Contact_Us.html" " style="color: red; text-decoration:none"> CONTACT US </a> </button>
-        </div>    
-
         <div class="header_admin">
-        <a href="pages/Admin_homepage.html"><img src="images/AdminIcon.png" class = "admin_logo" alt="adminicon" style="width:42px;height:42px;"></a>
-        </div>
+            <a href="pages/Admin_homepage.html"><img src="images/AdminIcon.png" class = "admin_logo" alt="adminicon" style="width:42px;height:42px;"></a>
+       </div>
 
-        </div>
+        <div class = "header">
+        <!--- Header Buttons --->
+        <!-- <div class="header_left"> -->
+        <button type="button" name = "Home_Button" class = "button" onclick=" "> <a class="a" href="index.html"> HOME </a> </button>
+        <button type="button" name = "Our_Story_Button" class = "button" onclick=" "> <a class="a" href="pages/Our_Story.html"> OUR STORY </a> </button>
+        <button type="button" name = "Reservation_Button" class = "button" onclick=" "> <a class="a" href="pages/Reservation.html" > RESERVATIONS </a> </button>
+        <!-- </div> -->
+        
+        <!-- <div class="header_center">  -->
+        <img name = "NRK_logo" class = "NRK_logo"  src="images/Header_logo.png" alt="NewRoz Kebab Logo Image" width=" " height=" ">
+        <!-- </div> -->
 
-    </head>
+        <!-- <div class="header_right"> -->
+        <button type="button" name = "Order_Now_Button" class = "button" onclick=" "> <a class="a" href="pages/Order_Now.html" > ORDER_NOW</a> </button>
+        <button type="button" name = "Menu_Button" class = "button" onclick=" "> <a class="a" href="pages/Menu.html"> MENU </a> </button>
+        <button type="button" name = "Contact_Us_Button" class = "button" onclick=" "> <a class="a" href="pages/Contact_Us.html" > CONTACT US </a> </button>
+        <!-- </div>     -->
 
-    <body>
+    </div>
 
-        <div name = "social-media" >
-        <a href="https://www.facebook.com/"><img name = "Facebook_logo" class = "Facebook_logo" src="images/Facebook_logo.png" alt="Facebook Logo Image" width=" " height=" "> </a> <br>
-        <a href="https://twitter.com/"><img name = "Twitter_logo" class = "Twitter_logo" src="images/Twitter_logo.png" alt="Twitter Logo Image" width=" " height=" "> </a> <br>
-        <a href="https://www.Instagram.com/"><img name = "Instagram_logo" class = "Instagram_logo" src="images/Instagram_logo.png" alt="Instagram Logo Image" width=" " height=" "> </a> <br>
+     </head>
+
+     <body>
+        <div class= "body_components">
+        <div class = "social_media" > <br><br>
+        <a href="https://www.facebook.com/"><img name = "Facebook_logo" class = "Facebook_logo" src="images/Facebook_logo.png" alt="Facebook Logo Image" width=" " height=" "> </a> <br> <br>
+        <a href="https://twitter.com/"><img name = "Twitter_logo" class = "Twitter_logo" src="images/Twitter_logo.png" alt="Twitter Logo Image" width=" " height=" "> </a> <br> <br>
+        <a href="https://www.Instagram.com/"><img name = "Instagram_logo" class = "Instagram_logo" src="images/Instagram_logo.png" alt="Instagram Logo Image" width=" " height=" "> </a> <br> <br>
         </div>
 
         <!--- SliceBox  -->
         <div class="wrapper">
-				<ul id="sb-slider" class="sb-slider">
+            <img name = "NRK_Kebab" class = "NRK_Kebab" src="images/Homepage_kabab.png" alt="Kebab Logo Image">
+				<!-- <ul id="sb-slider" class="sb-slider">
 					<li>
 						<a href="../The-Cool-Coders/index.html" target="_blank"><img src="images/Homepage_kabab.png" alt="image1"/></a>
 						<div class="sb-description">
@@ -107,7 +108,7 @@
 				<div id="nav-arrows" class="nav-arrows">
 					<a href="#">Next</a>
 					<a href="#">Previous</a>
-				</div>
+				</div> -->
 			</div>
 
         <!--- Side Slogan -->
@@ -115,52 +116,88 @@
         <p1> The Best Kebab's in Town </p1>
         </div>
 
+        </div>
+
         <div class = "reviews">
-
-        <h1><u><span class = "spaner" style="color :red;">R</span><span style="color :black;">eviews</u></span> </h1>  <br>
-        <!--- Comment 1 --->
-        <h2> <span class = "spaner" style="color :red;">J</span><span style="color :black;">ane</span>
-             <span class = "spaner" style="color :red;">D</span><span style="color :black;">oe</span>
-
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star"></span>  </h2> <br>
-
+        <h1><u><span class = "spaner" style="color :red;">R</span><span style="color :#808080;">eviews</u></span> </h1>  <br>
+      
         
+        <div class="name_and_stars">
+        <h2> <span class = "spaner" style="color :red;">J</span><span style="color :#808080;">ane</span>
+             <span class = "spaner" style="color :red;">D</span><span style="color :#808080;">oe</span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star"></span>  </h2>
+        </div>
+
             <div class = "written_comment">
-      <p2>  When you have a great story about how your product or service was built to change lives, share it.
-            The About Us page is a great place for it to live, too. </p2>
+            <p2>  When you have a great story about how your product or service was built to change lives, share it.
+                  The About Us page is a great place for it to live, too. </p2> <br> <br>
             </div>
+
+            <div class="name_and_stars">
+                <h2> <span class = "spaner" style="color :red;">O</span><span style="color :#808080;">wen</span>
+                     <span class = "spaner" style="color :red;">B</span><span style="color :#808080;">en</span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star"></span>
+                     <span class="fa fa-star"></span>  </h2>
+                </div>
+        
+                    <div class = "written_comment">
+                    <p2>  When you have a great story about how your product or service was built to change lives, share it.
+                          The About Us page is a great place for it to live, too. </p2> <br> <br>
+                    </div>
          
- 
-         <!--- Comment 2 --->
          <div class="name_and_stars">
-         <h2> <span class = "spaner" style="color :red;">W</span><span style="color :black;">ill</span>
-              <span class = "spaner" style="color :red;">M</span><span style="color :black;">ax</span>
+         <h2> <span class = "spaner" style="color :red;">W</span><span style="color :#808080;">ill</span>
+              <span class = "spaner" style="color :red;">M</span><span style="color :#808080;">ax</span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>  </h2> <br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>  </h2>
         </div>
 
-        <div class = "written_comment"></div>
-            <p2> 
-            When you have a great story about how your product or service was built to change lives, share it.
-            The About Us page is a great place for it to live, too. 
-            </p2> <br>
+       <div class = "written_comment">
+       <p2> When you have a great story about how your product or service was built to change lives, share it.
+            The About Us page is a great place for it to live, too.  </p2> <br>
         </div>
-
-      </div> <br>
- 
 
     </div>
-
     
+    <div class="customer_section">
 
-   </body>
+    <div class="sign_in">
+    <label for = "username"> Username: </label>
+    <input type="text" placeholder="Your Username" name="username" id="username"><br> <br>
+    <label for = "password"> Password: </label>
+    <input type="password" placeholder=" " name="password" id="password"><br> <br>
+    <button type="submit" name="sign_in_button" class="sign_in_button" >Sign In</button> <br>
+     </div>
+    <div class="middle_image">
+        <img name = "sign_in_image" class = "sign_in_image" src=" " alt="Sign_in Rice Image">
+			
+    </div>
+    <div class="sign_up"> <br>
+        <label for = "username1"> Username: </label>
+        <input type="text" placeholder="Your Username" name="username1" id="username1"><br> <br>
+        <label for = "email"> Email:  </label>
+        <input type="email" class="email1" placeholder="example@xyz.com" name="email" id="email"><br> <br>
+        <label for = "password"> Password: </label>
+        <input type="password" placeholder=" " name="password" id="password"><br> <br>
+        <button type="submit" name="sign_up_button" class="sign_up_button" >Sign Up</button> 
+    </div>
 
+    </div>
+      
+    </div>
+
+   
+
+     </body>
 
 </html>
