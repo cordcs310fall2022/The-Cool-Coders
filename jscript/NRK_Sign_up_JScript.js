@@ -6,59 +6,58 @@
 
 
 // We get the variables from the input by their ids
-const cform = document.getElementById('contact_form');
-const fname = document.getElementById('fname');
-const phone = document.getElementById('pnumber');
-const email = document.getElementById('email');
+const supform = document.getElementById('sign_up_form');
+const supusername = document.getElementById('sup_username');
+const supemail = document.getElementById('sup_email');
+const suppassword = document.getElementById('sup_password');
 
 
 
 // Picks up on the submitting action from a form and if they all pass the validation test and are not null the form will submit
 // However is the values dont pass the validation tests cancel the submit and report which values are invalid to the user. 
-cform.addEventListener('submit', e => {
+supform.addEventListener('submit', e => {
    
-if (fname.value !='' && phone.value !='' && email.value !='' && isValidEmail(email.value) && isValidPhone(phone.value)) {     
+if (supusername.value !='' && supemail.value !='' && suppassword.value !='' && isValidEmail(supemail.value) && isValidPassword(suppassword.value)) {     
     e.submit(); 
-    
 } 
 else {
     e.preventDefault();
-    checkInputs();
+    checkSignUpInputs();
 }
 
 });
 
 // Form Input Validation Function
-function checkInputs() {
+function checkSignUpInputs() {
 
     // trim to remove the whitespaces
-	const fnameValue = fname.value.trim();
-	const phoneValue = phone.value.trim();
-	const emailValue = email.value.trim();
+	const supusernameValue = supusername.value.trim();
+	const supemailValue = supemail.value.trim();
+	const suppasswordValue = suppassword.value;
 	
     // Declare Arrays so it will be easier to loop through errors
-    const Values = [fnameValue, phoneValue, emailValue];
-    const Initials = [fname, phone, email];
-    const Messages = ["First Name ", "Phone Number ","Email "];
+    const Values = [supusernameValue, supemailValue, suppasswordValue];
+    const Initials = [supusername, supemail, suppassword];
+    const Messages = ["Username ", "Email ","New password "];
 
     // This is the loop to verify the null and formatting errors
     for(var i=0;i<3;i++) {
     if(Values[i] === '') {
-		setErrorFor(Initials[i], Messages[i] + 'cannot be blank');
+		setErrorFor(Initials[i], Messages[i] + 'is required');
 	} 
     else {
     setSuccessFor(Initials[i]);
     }
     if (Values[1]!='') {
-        if (!isValidPhone(Values[1])) {
+        if (!isValidEmail(Values[1])) {
 	 	setErrorFor(Initials[1], 'This is not a valid ' +  Messages[1]);
      } else {
 	 	setSuccessFor(Initials[1]);
 	 }
     }
     if (Values[2]!='') {
-        if (!isValidEmail(Values[2])) {
-	 	setErrorFor(Initials[2], 'This is not a valid ' + Messages[2]);
+        if (!isValidPassword(Values[2])) {
+	 	setErrorFor(Initials[2], 'Please use a stronger password');
      } else {
 	 	setSuccessFor(Initials[2]);
 	 } 
@@ -73,14 +72,14 @@ function checkInputs() {
 function setErrorFor(input, message) {
 	const formControl = input.parentElement;
 	const small = formControl.querySelector('small');
-	formControl.className = 'contact_sections error';
+	formControl.className = 'signup_sections error';
 	small.innerText = message;
 }
 
 // Function that takes a value and normalizes the border color
 function setSuccessFor(input) {
 	const formControl = input.parentElement;
-	formControl.className = 'contact_sections success';
+	formControl.className = 'signup_sections success';
 }
 
 // Function that verifies the email using REGEX
@@ -89,7 +88,7 @@ function isValidEmail(email) {
 }
 
 // Function that verifies the phone number using REGEX
-function isValidPhone(phone) {
-    return /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/.test(phone);
+function isValidPassword(suppassword) {
+    return /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/.test(suppassword);
 }
 
